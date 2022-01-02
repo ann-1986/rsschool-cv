@@ -1,11 +1,139 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/arta.min.css">
+  <link rel="stylesheet" href="/style.css" />
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-    
+  <header>
+    <div class="topline"></div>
+    <div class="container">
+      <nav>
+        <ul class="topmenu">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#code">Code</a></li>
+        </ul>
+      </nav>
+      <div class="developer">
+        <div class="developer__name">
+          <h1>Anna Konyakhina</h1>
+          <h2>Front-end web developer (Beginner)</h2>
+        </div>
+        <div class="developer__photo">
+          <img src="/img/avatar.jpg" alt="Ann Konyakhina (Front-End Developer)">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main__grid">
+        <div class="main">
+          <section id="about-me">
+            <h2 class="section-header">About Me</h2>
+            <div class="section-body">
+              <p>I'm currently working as a freelancer. I slice layouts (Figma/PSD) to HTML.</p>
+              <p>I want to work at EPAM, grow and develop, learn everything new, take part in interesting projects.</p>
+            </div>
+          </section>
+          <section id="education">
+            <h2 class="section-header">Education</h2>
+            <div class="section-body">
+              Derzhavin Tambov State University, Applied Math and Information
+            </div>
+          </section>
+          <section id="projects">
+            <h2 class="section-header">Projects</h2>
+            <div class="section-body">
+              <ul class="example">
+                <li><a target="_blank" href="https://spb.mmir.pro/profrealtor"><img src="/img/macromir.jpg"
+                      alt="project Macromir" /></a></li>
+                <li><a target="_blank" href="http://de.r404.ru/"><img src="/img/de.jpg" alt="project de" /></a></li>
+                <li><a target="_blank" href="http://site5.r404.ru/"><img src="/img/pr.jpg" alt="project Mmir" /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="code">
+            <h2 class="section-header">Code</h2>
+            <pre>
+              <code>
+link.addEventListener('click', function(e) {
+  e.preventDefault();
+  const id = smoothLink.getAttribute('href');
+
+  document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+  });
+});
+              </code>
+            </pre>
+          </section>
+        </div>
+        <aside>
+          <section>
+            <h3 class="aside-header">Contacts</h3>
+            <div class="aside-value">
+              <ul class="contacts-list">
+                <li>Email: <a href="mailto:ann-1986@yandex.ru">ann-1986@yandex.ru</a></li>
+                <li>Discord: ann-1986</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h3 class="aside-header">Location</h3>
+            <div class="aside-value">Tambov, Russia</div>
+          </section>
+          <section>
+            <h3 class="aside-header">Skills</h3>
+            <ul class="skils-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Flexbox</li>
+              <li>Scss</li>
+              <li>Git</li>
+              <li>Gulp</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="aside-header">English level</h3>
+            <div class="aside-value">A1</div>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__logo">
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="/img/rs_school_js.svg" alt="">
+          </a>
+        </div>
+        <div class="footer__year">
+          Created in 2022
+        </div>
+        <div class="footer__github">
+          <a href="https://github.com/ann-1986" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
